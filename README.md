@@ -1,66 +1,29 @@
-## Foundry
+# Counter - Arc Testnet
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A smart contract with increment, decrement and reset functionality deployed on Arc Testnet using Foundry.
 
-Foundry consists of:
+## Contract Details
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Network:** Arc Testnet
+- **Contract Address:** 0x5CE58ee895F4c0FDFA774E4795c9eDa9c5930c8f
+- **Deployer:** 0x54b4B44749a95070560509B6Ec0be501665CcF63
+- **Transaction Hash:** 0xcb02a7f2195454f58ced0aedac077136d9132977ee95c7f66daaa6403f180baa
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- Increment and decrement counter (supports negative values)
+- Owner-only reset functionality
+- Track total increment and decrement statistics
+- Built with Foundry and Solidity ^0.8.30
 
-## Usage
+## Getting Started
 
-### Build
-
-```shell
-$ forge build
+```bash
+forge install
+forge test
+forge build
 ```
 
-### Test
+## Explorer
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[View on Arc Testnet Explorer](https://testnet.arcscan.app/address/0x5CE58ee895F4c0FDFA774E4795c9eDa9c5930c8f)
